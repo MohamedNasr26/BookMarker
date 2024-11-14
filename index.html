@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <title>BookMark</title>
+    
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          
+              
+            </ul>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+   <div class="bookmarkeer text-white">
+    <div class="container">
+      
+      <form class="bg-dark p-2 my-4 ">
+        <div class="book text-center">
+          <h3 class="my-3 ">BookMark Your Favourut Sites</h3>
+          <label class="text-center my-3" for="sn">Site Name</label>
+          <input type="text" name="Site Name" placeholder="BookMark Name" id="sn" class="form-control" >
+          <label class="text-center my-3" for="su">Site URL</label>
+          <input type="text" name="Site Name" placeholder="WebSite URL" id="su" class="form-control">
+          <button disabled onclick="addNewSite()" id="addBtn" class="btn btn-light my-5" type="button"> Submit</button>
+        </div>
+      </form>
+      <input type="text" class="form-control bg-dark " placeholder="Search Here...." id="search" onkeyup="SearchElement( this.value )">
+      <table class="table table-striped bg-dark text-white my-5 ">
+        <thead>
+          <tr>
+            <th> Site Name</th>
+            <th> Site URL</th>
+            <th> Vist</th>
+            <th> Update</th>
+            <th> Delete</th>
+            
+          </tr>
+        </thead>
+        <tbody id="tbody" >
+        </tbody>
+      </table>
+    </div>
+   </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
